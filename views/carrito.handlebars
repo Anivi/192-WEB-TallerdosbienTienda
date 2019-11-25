@@ -16,30 +16,29 @@
     <section class="landing">
         <header class="barra">
 
-        <div class="barra__logo">
-            <img class="logo" src="imagenes/logo.png">
-        </div>
+            <div class="barra__logo">
+                <img class="logo" src="imagenes/logo.png">
+            </div>
 
-        <div class="barra__icono">
-            <img alt="Icono" src="imagenes/iconos/bars.svg">
-        </div>
+            <div class="barra__icono">
+                <img alt="Icono" src="imagenes/iconos/bars.svg">
+            </div>
 
-        <div class="barra__navegador">
-            <a href="/">Home</a>
-            <a href="#">¿Quienes somos?</a>
-            <a class="barra__navegador-activo" href="/tienda?var=general">Tienda</a>
-            <a href="#">¡Aprende!</a>
-            <input type="text" placeholder="¿Que estas buscando?">
-        </div>
-    </header>
+            <div class="barra__navegador">
+                <a href="/">Home</a>
+                <a href="#">¿Quienes somos?</a>
+                <a class="barra__navegador-activo" href="/tienda?var=general">Tienda</a>
+                <a href="#">¡Aprende!</a>
+                <input type="text" placeholder="¿Que estas buscando?">
+            </div>
+        </header>
 
         <h1>Tus productos:</h1>
 
         <div class="lista">
             {{#each productos}}
             <div class="prod">
-                <img src="{{imagenes.[0]}}" alt="" class="prod__img" width="15%"
-                    height="35%">
+                <img src="{{imagenes.[0]}}" alt="" class="prod__img" width="15%" height="35%">
 
                 <div class="prod__elems">
                     <h2>{{name}}</h2>
@@ -51,14 +50,14 @@
             {{/each}}
 
         </div>
-        
+
         <h6 class="Tot">Total: ${{total}}</h6>
 
         <div class="datos">
             <div class="izq">
-                <input type="text" placeholder="Direccion">
-                <input type="text" placeholder="Telefono">
-                <input type="text" placeholder="Ciudad">
+                <input id="inp0" type="text" placeholder="Direccion">
+                <input id="inp2" type="text" placeholder="Telefono">
+                <input id="inp3" type="text" placeholder="Ciudad">
                 <h6 class="Tot">Precio: ${{total}}</h6>
             </div>
 
@@ -67,7 +66,52 @@
             </div>
 
         </div>
-            <button class="comprar">Comprar</button>
+        <div class="comprar">Comprar</div>
+        <div class="btnVaciar">BORRAR CARRITO</div>
 </body>
+
+<script>
+    document.querySelector(".btnVaciar").addEventListener('click', function () {
+        fetch(`/api/vaciarCarrito`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: ``,
+        }).then(function (respuesta) {
+            return respuesta.text();
+        }).catch(function (error) {
+            console.error(error);
+        }).then(function (mensaje) {
+            console.log(mensaje);
+        });
+        window.location.href = "/carrito";
+    }
+    );
+    document.querySelector(".comprar").addEventListener('click', function () {
+        var dir = document.querySelector('#inp0')).value;
+        var tel = document.querySelector('#inp2')).value;
+        var ciu = document.querySelector('#inp3')).value;
+
+        if (dir === "" || tel === "" || ciu === "") { alert('llene todos los campos'); return }
+
+    fetch(`/api/NuevaSolicitud`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `direccion=${dir}&telefono=${tel}&ciudad=${ciu}`,
+    }).then(function (respuesta) {
+        return respuesta.text();
+    }).catch(function (error) {
+        console.error(error);
+    }).then(function (mensaje) {
+        console.log(mensaje);
+    });
+
+    window.location.href = "/store?var=general&";
+    }
+    );
+</script>
 
 </html>

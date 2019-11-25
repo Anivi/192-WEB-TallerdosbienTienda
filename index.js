@@ -101,11 +101,11 @@ app.get('/carrito', function (request, response) {
         }
         var total = 0;
         docs.map((elem) => {
-            total += elem.precio;
+            total += parseInt(elem.precio);
         });
         response.render('carrito', {
             productos: docs,
-            total: total
+            total: total+'.000'
         });
     });
 });
@@ -145,7 +145,7 @@ app.post('/api/AgregarAlCarrito', function (request, response) {
 });
 
 app.post('/api/vaciarCarrito', function (request, response) {
-    const coleccion = db.collection('carrito');
+    const coleccion = db.collection('car');
     coleccion.remove({});
     response.send("borrado");
 });
@@ -153,13 +153,9 @@ app.post('/api/vaciarCarrito', function (request, response) {
 app.post('/api/nuevaSolicitud', function (request, response) {
     const coleccion = db.collection('peticiones');
     coleccion.insert({
-        nombre: request.body.nombre,
-        apellido: request.body.nombre,
-        cedula: request.body.cedula,
         direccion: request.body.direccion,
-        cuenta: request.body.cuenta,
-        fecha: request.body.fecha,
-        codigo: request.body.codigo
+        telefono: request.body.telefono,
+        ciudad: request.body.ciudad
     });
     response.send("Nueva solicitud creada");
 });

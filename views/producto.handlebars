@@ -39,14 +39,14 @@
 
             <article class="imagen">
                 <div class="imgContesp">
-                    <img src="{{imagenes.[0]}}" alt="{{nombre}}">
+                    <img id="grand" src="{{imagenes.[0]}}" alt="{{nombre}}">
                 </div>
                 <div class="imgsVerticales">
                     <div class="imgCont">
-                        <img src="{{imagenes.[1]}}" alt="{{nombre}}">
+                        <img id="pe0" src="{{imagenes.[1]}}" alt="{{nombre}}">
                     </div>
                     <div class="imgCont">
-                        <img src="{{imagenes.[2]}}" alt="{{nombre}}">
+                        <img id="pe2" src="{{imagenes.[2]}}" alt="{{nombre}}">
                     </div>
                     <p>Tamaño: {{tamaño}}   Textura: {{Textura}}</p>
                 </div>
@@ -82,5 +82,12 @@
         window.location.href = "/carrito";
     }
     );
+
+    document.querySelector('#pe0').addEventListener('click', ()=> {
+        document.querySelector('#grand').src = document.querySelector('#pe0').src;
+    });
+    document.querySelector('#pe2').addEventListener('click', ()=> {
+        document.querySelector('#grand').src = document.querySelector('#pe2').src;
+    });
 </script>
 </html>
