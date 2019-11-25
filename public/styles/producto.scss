@@ -1,9 +1,10 @@
 .producto {
     padding-top: 80px;
 
-    .producto__caption {
-        h1 {
-            font-size: 40px;
+    &__caption {
+        &__nombre {
+            font-size: 200px;
+        
         }
 
         .imagen {
@@ -32,4 +33,42 @@
         }
     }
 
+}
+.filters {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+
+    &__car {
+        display: flex;
+        justify-content: flex-end;
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-content: stretch;
+            align-items: center;
+
+            width: 120px;
+            padding: 10px;
+            transition: all .4s;
+            border-radius: 20px;
+            border: 2px solid #4D4C4C;
+
+            cursor: pointer;
+
+            img {
+                width: 20px;
+                opacity: .5;
+            }
+        }
+    }
 }

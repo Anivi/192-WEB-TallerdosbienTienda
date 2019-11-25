@@ -31,11 +31,17 @@
             <input type="text" placeholder="¿Que estas buscando?">
         </div>
     </header>
+     <article class="filters__car">
+                    <div class="filters__car__content">
+                        <img alt="Icono" src="imagenes/iconos/shopping-cart.svg">
+                       <a href="/carrito"> <p>Carrito ( <span>0</span> )  </p></a>
+                    </div>
+                </article>
 
     <section class="producto">
         {{#each producto}}
         <article class="producto__caption">
-            <h1>{{name}}</h1>
+            <h1 class="producto__nombre">{{name}}</h1>
 
             <article class="imagen">
                 <div class="imgContesp">
@@ -52,8 +58,8 @@
                 </div>
             </article>
 
-            <h3>Descripción</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio itaque saepe nesciunt eveniet accusamus velit dolores, esse quidem eius ad fugit consequatur perferendis laborum, inventore laboriosam voluptas minima. Quis.</p>
+            <!--<h3>Descripción</h3>-->
+           <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio itaque saepe nesciunt eveniet accusamus velit dolores, esse quidem eius ad fugit consequatur perferendis laborum, inventore laboriosam voluptas minima. Quis.</p>-->
             <p>Precio: ${{precio}}</p>
 
             <button class="btnAgregar" data-name="{{name}}">Agregar al carrito</button>
