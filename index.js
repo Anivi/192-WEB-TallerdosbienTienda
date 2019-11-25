@@ -5,7 +5,7 @@ const express = require('express'),
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 const url = 'mongodb://localhost:27017';
-const dbName = 'patuka';
+const dbName = 'Tienda';
 const client = new MongoClient(url, { useNewUrlParser: true });
 var clientdb=null;
 
