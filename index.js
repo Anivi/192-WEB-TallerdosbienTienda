@@ -19,6 +19,8 @@ const client = new MongoClient(url, {
 });
 var db = null;
 
+var nombre, cedula;
+
 client.connect(function (err) {
     if (err) {
         console.error(err);
@@ -110,8 +112,23 @@ app.get('/carrito', function (request, response) {
     });
 });
 
-app.get('/informacion', function (request, response) {
-    response.render('informacion');
+app.get('/pago', function (request, response) {
+    const coleccion = db.collection('car');
+    coleccion.find({}).toArray(function (err, docs) {
+        if (err) {
+            console.log(err);
+            response.send(err);
+            return;
+        }
+        var total = 0;
+        docs.map((elem) => {
+            total += parseInt(elem.precio);
+        });
+        response.render('pago', {
+            productos: docs,
+            total: total+'.000'
+        });
+    });
 });
 
 app.post('/api/AgregarAlCarrito', function (request, response) {
@@ -150,9 +167,17 @@ app.post('/api/vaciarCarrito', function (request, response) {
     response.send("borrado");
 });
 
+app.post('/api/vars', function (request, response) {
+    nombre = request.body.nombre;
+    cedula = request.body.cedula;
+    response.send("Nueva solicitud creada");
+});
+
 app.post('/api/nuevaSolicitud', function (request, response) {
-    const coleccion = db.collection('peticiones');
+    const coleccion = db.collection('solicitudes');
     coleccion.insert({
+        nombre: nombre,
+        cedula: cedula,
         direccion: request.body.direccion,
         telefono: request.body.telefono,
         ciudad: request.body.ciudad

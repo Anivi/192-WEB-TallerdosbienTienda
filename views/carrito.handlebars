@@ -53,65 +53,45 @@
 
         <h6 class="Tot">Total: ${{total}}</h6>
 
-        <div class="datos">
-            <div class="izq">
-                <input id="inp0" type="text" placeholder="Direccion">
-                <input id="inp2" type="text" placeholder="Telefono">
-                <input id="inp3" type="text" placeholder="Ciudad">
-                <h6 class="Tot">Precio: ${{total}}</h6>
-            </div>
+        <div class="log">
+            <h1>Inicia sesión para comprar</h1>
+            <p>Nombre</p>
+            <input id="inp5" type="text" placeholder="Nombre">
+            <p>Cedula</p>
+            <input id="inp6" type="text" placeholder="Cedula">
 
-            <div class="der">
-                <p>Metodo de Pago</p>
-            </div>
-
+            <div id="entrar">Entrar</div>
         </div>
-        <div class="comprar">Comprar</div>
-        <div class="btnVaciar">BORRAR CARRITO</div>
 </body>
 
 <script>
-    document.querySelector(".btnVaciar").addEventListener('click', function () {
-        fetch(`/api/vaciarCarrito`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: ``,
-        }).then(function (respuesta) {
-            return respuesta.text();
-        }).catch(function (error) {
-            console.error(error);
-        }).then(function (mensaje) {
-            console.log(mensaje);
-        });
-        window.location.href = "/carrito";
-    }
-    );
-    document.querySelector(".comprar").addEventListener('click', function () {
-        var dir = document.querySelector('#inp0')).value;
-        var tel = document.querySelector('#inp2')).value;
-        var ciu = document.querySelector('#inp3')).value;
+    var btn = document.querySelector("#entrar");
+    btn.addEventListener('click', function () {
+        var nom = document.querySelector('#inp5').value;
+        var ced = document.querySelector('#inp6').value;
 
-        if (dir === "" || tel === "" || ciu === "") { alert('llene todos los campos'); return }
+        if (nom === "" || ced === "") {
+            alert('llene todos los campos');
+            return;
+        } else {
+            fetch(`/api/vars`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `nombre=${nom}&cedula=${ced}`
+            }).then(function (respuesta) {
+                return respuesta.text();
+            }).catch(function (error) {
+                console.error(error);
+            }).then(function (mensaje) {
+                console.log(mensaje);
+            });
 
-    fetch(`/api/NuevaSolicitud`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: `direccion=${dir}&telefono=${tel}&ciudad=${ciu}`,
-    }).then(function (respuesta) {
-        return respuesta.text();
-    }).catch(function (error) {
-        console.error(error);
-    }).then(function (mensaje) {
-        console.log(mensaje);
+            window.location.href = "/pago";
+        }
+
     });
-
-    window.location.href = "/store?var=general&";
-    }
-    );
 </script>
 
 </html>
