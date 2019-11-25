@@ -1,4 +1,47 @@
 .producto {
   padding-top: 80px;
 }
+
+.producto .producto__caption h1 {
+  font-size: 40px;
+}
+
+.producto .producto__caption .imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+.producto .producto__caption .imagen .imgContesp {
+  height: 100%;
+}
+
+.producto .producto__caption .imagen .imgContesp img {
+  height: 100%;
+}
+
+.producto .producto__caption .imagen .imgsVerticales {
+  overflow: hidden;
+  height: 100%;
+}
+
+.producto .producto__caption .imagen .imgsVerticales .imgCont {
+  height: 25%;
+  margin-bottom: 20%;
+}
+
+.producto .producto__caption .imagen .imgsVerticales .imgCont img {
+  height: 100%;
+}
 /*# sourceMappingURL=producto.css.map */

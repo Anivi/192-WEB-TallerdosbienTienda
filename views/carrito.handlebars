@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,46 @@
     <link rel="stylesheet" href="styles/footer.css">
 
 </head>
+
 <body>
-     <section class ="landing">
-            <header class="barra">
-               
-                    <div class="barra__arriba">
-                        
-                            <img class="logo" src="imagenes/logo.png" >
-                        <!---<input type="text" placeholder="Buscar">-->
-                        <input class="text" type="text" placeholder="Buscar">
-                    </div>
-                    <div class="barra__navegador">
-                            <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">¿Quienes somos?</a></li>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">¡Aprende!</a></li>
-                            
-                        </ul>
-                        
-                            </div>
-            
-            </header>
+    <section class="landing">
+        <header class="barra">
+
+        <div class="barra__logo">
+            <img class="logo" src="imagenes/logo.png">
+        </div>
+
+        <div class="barra__icono">
+            <img alt="Icono" src="imagenes/iconos/bars.svg">
+        </div>
+
+        <div class="barra__navegador">
+            <a href="/">Home</a>
+            <a href="#">¿Quienes somos?</a>
+            <a class="barra__navegador-activo" href="/tienda?var=general">Tienda</a>
+            <a href="#">¡Aprende!</a>
+            <input type="text" placeholder="¿Que estas buscando?">
+        </div>
+    </header>
+
+        <div class="prueba">
+            {{#each productos}}
+            <div class="cuerpo__izq__item">
+                <img src="./image/galeriaAretes/{{imagenes.[0]}}.jpg" alt="" class="cuerpo__izq__item__img" width="15%"
+                    height="35%">
+
+                <div class="cuerpo__izq__item__img__name">
+                    <h2>{{nombre}}</h2>
+                    <h6>{{descripción}}</h6>
+                </div>
+
+                <div data-color="{{color}}" class="color">{{color}}</div>
+                <div data-precio="{{categoria}}" class="categoria">{{categoria}}</div>
+                <h3 data-precio="{{Precio}}" class="precio">${{precio}}</h3>
+                <div class="cerrar">x</div>
+            </div>
+            {{/each}}
+        </div>
 </body>
+
 </html>

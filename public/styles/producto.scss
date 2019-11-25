@@ -1,5 +1,35 @@
 .producto {
     padding-top: 80px;
 
-   
+    .producto__caption {
+        h1 {
+            font-size: 40px;
+        }
+
+        .imagen {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+            .imgContesp {
+                height: 100%;
+                img {height: 100%;}
+            }
+
+            .imgsVerticales{
+                overflow: hidden;
+                height: 100%;
+                .imgCont {
+                    height: 25%;
+                    margin-bottom: 20%;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }

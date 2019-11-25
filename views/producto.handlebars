@@ -32,34 +32,55 @@
         </div>
     </header>
 
-    <!---   <div class="caption">
-                            <p>Nombre producto</p>
-                            <p>Color</p>  
-                          <p>Tamaño</p>
-                            <p>Precio</p>
-                            <p>Comprar</p>
-                        </div>-->
-
     <section class="producto">
-        
+        {{#each producto}}
         <article class="producto__caption">
+            <h1>{{name}}</h1>
 
+            <article class="imagen">
+                <div class="imgContesp">
+                    <img src="{{imagenes.[0]}}" alt="{{nombre}}">
+                </div>
+                <div class="imgsVerticales">
+                    <div class="imgCont">
+                        <img src="{{imagenes.[1]}}" alt="{{nombre}}">
+                    </div>
+                    <div class="imgCont">
+                        <img src="{{imagenes.[2]}}" alt="{{nombre}}">
+                    </div>
+                    <p>Tamaño: {{tamaño}}   Textura: {{Textura}}</p>
+                </div>
+            </article>
 
-            <article class="producto__content">
+            <h3>Descripción</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio itaque saepe nesciunt eveniet accusamus velit dolores, esse quidem eius ad fugit consequatur perferendis laborum, inventore laboriosam voluptas minima. Quis.</p>
+            <p>Precio: ${{precio}}</p>
 
-                <section class="element">
-                    <article class="element__content">
-                        <p><strong>Ordenar por: </strong></p>
-                        <p>Menor a mayor precio</p>
-                        <p>Producto</p>
-                        <p>Tendencia</p>
-                    </article>
+            <button class="btnAgregar" data-name="{{name}}">Agregar al carrito</button>
 
-
-                </section>
-
-
+        </article>
+        {{/each}}
+    </section>
 
 </body>
-
+<script>
+    document.querySelector(".btnAgregar").addEventListener('click', function () {
+        var name = document.querySelector(".btnAgregar").getAttribute('data-name');
+        fetch(`/api/AgregarAlCarrito`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `nombre=${name}`,
+        }).then(function (respuesta) {
+            return respuesta.text();
+        }).catch(function (error) {
+            console.error(error);
+        }).then(function (mensaje) {
+            console.log(mensaje);
+        });
+        window.location.href = "/carrito";
+    }
+    );
+</script>
 </html>
