@@ -172,17 +172,24 @@
   padding-left: 50px;
 }
 
-.tienda__filter__content__item__content p {
+.tienda__filter__content__item__title h1 {
+  color: black;
+  text-decoration: none;
+}
+
+.tienda__filter__content__item__content a {
   margin: 10px 20px;
   margin-left: 70px;
   margin-right: 80px;
   opacity: .5;
   -webkit-transition: all .4s;
   transition: all .4s;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
-.tienda__filter__content__item__content p:hover {
+.tienda__filter__content__item__content a:hover {
   opacity: .8;
 }
 

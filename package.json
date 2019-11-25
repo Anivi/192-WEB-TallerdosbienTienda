@@ -1,26 +1,22 @@
 {
-  "name": "taller2",
+  "name": "taller_2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index"
+    "start": "npx nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "assert": "^1.4.1",
-    "assert-js": "^0.22.0",
-    "consolidate": "^0.15.1",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.5.1",
-    "nodemon": "^1.19.4",
-    "npm": "^6.12.1"
+    "mongodb": "^3.3.3",
+    "node": "^12.12.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "nodemon": "^1.19.4"
   }
 }
