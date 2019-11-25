@@ -63,7 +63,13 @@ app.get('/tienda', function (request, response) {
                 return n === 0 && a.name !== b.name ? b.name.localeCompare(a.name) : n;
             })
             :
-            docs.sort(() => { return 0.5 - Math.random() });
+            docs.sort((a,b) => { 
+                if(a.Tendencia === null) {
+                    return 1;
+                }else {
+                    return -1;
+                } 
+            });
         }
         var contexto = {
             productos: docs
