@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "imagenes": [ "Frankes 1.png", "Frankes 2.png", "Frankes 3.png"],
+        "color": "Verde",
+        "tamaño": "Mediano",
+        "precio": "15.000"
+
+    },
+
+    {
+        "id": 2,
+        "imagenes": ["Vaca 1.png", "Vaca 2.png", "Vaca 3.png"],
+        "color": "Blanco",
+        "tamaño": "Pequeño",
+        "precio": 25.000
+
+    },
+
+    {
+        "id": 3,
+        "imagenes":["Totoro 1.png", "Totoro 2.png", "Totoro 3.png"],,
+        "color":"Colorido",
+        "tamaño": "Mediano",
+        "precio": 25.000
+
+    },
+
+    {
+        "id": 4,
+        "imagenes":["OsoA 1.png", "OsoA 2.png", "OsoA 3.png"],
+        "color":"Amarillo",
+        "tamaño": "Mediano",
+        "precio":20.000
+
+    },
+
+    {
+        "id": 5,
+        "imagenes":["Coneja 1.png", "Coneja 2.png", "Coneja 3.png"],
+        "color":"Colorido",
+        "tamaño": "Grande",
+        "precio": 30.000
+
+    },
+
+    {
+        "id": 6,
+        "imagenes":["Familia 1.png", "Familia 2.png", "Familia 3.png"],
+        "color": "Colorido",
+        "tamaño": "Grande",
+        "precio": "50.000"
+
+    },
+
+    {
+        "id": 7,
+        "imagenes": ["Mono 1.png", "Mono 2.png", "Mono 3.png"],
+        "color":"Colorido",
+        "tamaño":"Pequeño",
+        "precio":"20.000"
+
+    },
+
+    {
+        "id": 8,
+        "imagenes":["Dracula 1.png", "Dracula 2.png", "Dracula 3.png"],
+        "color":"Colorido",
+        "tamaño":"Pequeño",
+        "precio":"15.000",
+
+    },
+
+    {
+        "id": 9,
+        "imagenes":["Cerdo 1.png", "Cerdo 2.png", "Cerdo 3.png"],
+        "color":"Rosado",
+        "tamaño": "Mediano",
+        "precio":"20.000"
+
+    },
+
+    {
+        "id": 10,
+        "imagenes":["Saitama 1.png", "Saitama 2.png", "Saitama 3.png"],
+        "color":"Colorido",
+        "tamaño":"Mediano",
+        "precio":"25.000"
+
+    },
+
+    {
+        "id": 11,
+        "imagenes":["Gorro Gato.png"],
+        "color":"Amarillo",
+        "tamaño":"Grande",
+        "precio": 30.000
+
+    },
+
+    {
+        "id": 12,
+        "imagenes":["Perrito 1.png", "Perrito 2.png", "Perrito 3.png"],
+        "color":"Blanco",
+        "tamaño":"Pequeño",
+        "precio":"15.000"
+
+    },
+
+    {
+        "id": 13,
+        "imagenes":["Monstruo 1.png", "Monstruo 2.png", "Monstruo 3.png"],
+        "color":"Azul",
+        "tamaño":"Pequeño",
+        "precio":"15.000"
+
+    },
+
+    {
+        "id": 14,
+        "imagenes":["Gorro Buho.png"],
+        "color":"Rosado",
+        "tamaño":"Grande",
+        "precio": "25.000"
+
+    },
+
+    {
+        "id": 15,
+        "imagenes":["Capi 1.png", "Capi 2.png", "Capi 3.png"],
+        "color":"Colorido",
+        "tamaño": "Mediano",
+        "precio": "30.000"
+
+    },
+
+    {
+        "id": 16,
+        "imagenes":["OsoV 1.png", "OsoV 2.png", "OsoV 3.png"],
+        "color":"Verde",
+        "tamaño":"Mediano",
+        "precio": "20.000"
+
+    },
+
+    {
+        "id": 17,
+        "imagenes":["Minito 1.png", "Minito 2.png", "Minito 3.png"],
+        "color":"Colorido",
+        "tamaño": "Pequeño",
+        "precio": "15.000"
+
+    },
+
+    {
+        "id": 18,
+        "imagenes":["Gorro multicolor.png"],
+        "color":"Colorido",
+        "tamaño":"Grande",
+        "precio": "30.000"
+
+    },
+
+    {
+        "id": 19,
+        "imagenes":["Caracol 1.png", "Caracol 2.png", "Caracol 3.png"],
+        "color":"Colorido",
+        "tamaño":"Pequeño",
+        "precio":"15.000"
+
+    },
+
+    {
+        "id": 20,
+        "imagenes":["OsoN 1.png", "OsoN 2.png", "OsoN 3.png"],
+        "color":"Naranaj",
+        "tamaño":"Mediano",
+        "precio": "20.000"
+
+    },
+
+]

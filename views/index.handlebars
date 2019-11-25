@@ -1,0 +1,248 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Tejidos Patuka</title>
+            <link rel="stylesheet" href="styles/styles-taller2.css">
+            <meta name="viewport"
+                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        </head>
+
+        <body>
+            <section class="landing">
+                <header class="barra">
+
+                    <div class="barra__arriba">
+
+                        <img class="logo" src="imagenes/logo.png">
+                        <!---<input type="text" placeholder="Buscar">-->
+                        <input class="text" type="text" placeholder="Buscar">
+                    </div>
+                    <div class="barra__navegador">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">¿Quienes somos?</a></li>
+                            <li><a href="/tienda">Productos</a></li>
+                            <li><a href="#">¡Aprende!</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </header>
+
+                <div class="landing__portada">
+                    <div class="portada__foto">
+                        <img class="portada__foto-thor" src="imagenes/thor.png">
+                    </div>
+                    <div class="portada__info">
+                        <img class="portada__info-titulo" src="imagenes/thortitu.png" alt="">
+                        <p class="portada__info-texto">¿Te encantan los vengadores? <br>
+                            Pues ¡llegó Thor! Es momento de que <br> consigas el tuyo y a sus compañeros <br> que podrás
+                            ver en la galeria. <br> ¡Coleccionalos!</p>
+                        <button class="portada__info-boton">Comprar</button>
+                    </div>
+                </div>
+                <div class="landing__datos">
+                    <div class="datos__uno">
+                        <div class="datos__uno-img" style="background-image: url(imagenes/corazon.png)"></div>
+                        <p class="datos__uno-text">Productos 100% <br> tejidos a mano
+                        </p>
+
+                    </div>
+                    <div class="datos__uno">
+                        <div class="datos__uno-img" style="background-image: url(imagenes/unico.png)"></div>
+                        <p class="datos__uno-text">Productos <br> personalizados
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="landing__aleja">
+                    <div class="aleja__atras">
+                        <img class="aleja__atras-img" src="imagenes/nena.jpg" alt="">
+
+                        <div class="aleja__texto">
+                            <h1 class="aleja__texto-titulo">Para toda ocasión</h1>
+                            <p class="aleja__texto-contenido">Llevanos contigo, a la playa, a tierra fría o caliente,
+                                con el estilo que quieras.</p>
+                            <button class="aleja__texto-boton">Ver prendas</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="landing__carac">
+                    <div onmouseout="showText()" class="landing__caracteristica"
+                        style="background-image: url('./imagenes/primero.png')">
+                        <div class="landing__carac-info">
+                            <h1 class="landing__carac-tex">Materiales suaves</h1>
+                            <p class="landing__carac-p">Los cuales se adaptan a cualquier clima
+                            </p>
+                        </div>
+                    </div>
+
+                    <div onmouseout="showText()" class="landing__caracteristica"
+                        style="background-image: url('./imagenes/segundo.png')">
+
+                        <div class="landing__carac-info">
+                            <h1 class="landing__carac-tex">Tejido 100% a mano</h1>
+                            <p class="landing__carac-p">Lo que hace que cada producto sea único </p>
+                        </div>
+                    </div>
+
+                    <div onmouseout="showText()" class="landing__caracteristica"
+                        style="background-image: url('./imagenes/tercero.png')">
+
+                        <div class="landing__carac-info">
+                            <h1 class="landing__carac-tex">Tejidos dinámicos</h1>
+                            <p class="landing__carac-p">Puntadas únicas </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="landing__galeria">
+                    <div class="landing__galeria-fotos">
+
+
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/una.png')"></div>
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/dos.png')"></div>
+
+
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/tres.png')"></div>
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/cuatro.png')"></div>
+
+
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/cinco.png')"></div>
+                        <div class="landing__galeria-foto" style="background-image: url('imagenes/seis.png')"></div>
+
+
+
+                    </div>
+                    <div class="landing__galeria-mostrar">
+
+                    </div>
+
+                </div>
+                <div class="landing__interaccion">
+
+                    <div class="landing__interaccion-fondo">
+
+
+                        <h1 class="landing__interaccion-titulo">Pinta el vestido</h1>
+                        <!--aquí estoy cargando las lanas y le puse dos clases, para que la segunda se use en js-->
+                        <!--la primera clase es para estilos y la segunda para identificar cada elemento en js-->
+                        <img class="landing__interaccion-lana rosada" src="imagenes/lana1.png" alt="">
+                        <img class="landing__interaccion-lana roja" src="imagenes/lana2.png" alt="">
+                        <img class="landing__interaccion-lana amarilla" src="imagenes/lana3.png" alt="">
+                        <img class="landing__interaccion-lana azul" src="imagenes/lana4.png" alt="">
+                    </div>
+
+                    <div class="landing__interaccionmujer">
+                        <!--aqui es para la imagen de la mujer que va a cambiar-->
+                        <img class="landing__interaccion-mujer" src="imagenes/mujer.png" alt="">
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="interaccion__pintada">
+
+                </div>
+                </div>
+
+
+
+                <div class="landing__especificaciones">
+                    <div class="landing__especificacionesImg">
+                        <img class="especificaciones__perrito" src="imagenes/perrito.png" alt="">
+                    </div>
+                    <div class="especificaciones__texto">
+                        <h1 class="especificaciones__texto-titulo">Especificaciones</h1>
+
+                        <ul class="especificaciones__texto-contenido">
+                            <li>Diseños personalizados, con los estilos que desees.</li>
+                            <li>Patrones de tejido que tu quieras</li>
+                            <li>Productos para cualquier tipo de persona</li>
+                            <li>Los tamaños son a tu preferencia</li>
+                            <li>Colores e hilos son a tu preferencia</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="landing__inscripcion">
+
+                    <div class="inscripcion__fondo">
+                        <div class="inscripcion__texto">
+                            <h1 class="inscripcion__titulo">¡Mira los <br> nuevos productos <br> antes que los demás!
+                            </h1>
+                            <p class="inscripcion__contenido">Recibe actualizaciones sobre nuevos <br> productos y
+                                descuentos</p>
+                            <input class="inscripcion__correo" type="text" placeholder="Ingresa tu correo electrónico">
+                            <button class="inscripcion__correo-boton">Registrarse</button>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </section>
+            <footer class="abajo">
+                <div class="abajo__primero">
+                    <img class="abajo__primero-logo" src="imagenes/logoA.png" alt="">
+                </div>
+                <div class="abajo__uno">
+                    <img class="abajo__uno-redes" src="imagenes/facebook.png" alt="">
+                    <img class="abajo__uno-redes" src="imagenes/instagram.png" alt="">
+                </div>
+
+                <div class="abajo__dos">
+
+                    <div class="abajo__izquierda">
+                        <p>
+                            <ul class="abajo__quitarPuntos">
+                                <li><a>Información de la empresa</a></li>
+                                <li><a>Contactos</a></li>
+                                <li><a>Ubicación</a></li>
+                            </ul>
+                        </p>
+
+
+                    </div>
+                    <div class="abajo__derecha">
+                        <p>
+                            <ul class="abajo__quitarPuntos">
+                                <li><a>Productos</a></li>
+                                <li><a>¿Interesado/a en vender?</a></li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+
+            </footer>
+            <script src="script/menu.js"></script>
+        </body>
+
+        </html>

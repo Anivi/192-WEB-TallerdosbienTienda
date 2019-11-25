@@ -1,0 +1,87 @@
+.barra{
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 2px solid #4D4C4C;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+    
+    box-sizing: border-box;
+    padding: 10px 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+
+    &__logo{
+        img{
+            width: 60%;
+            min-width: 110px;
+        }
+    }
+
+    &__icono{
+        width: 20px;
+        cursor: pointer;
+        display: none;
+    }
+
+    &__navegador{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        a{
+            color: black;
+            text-decoration: none;
+            opacity: .5;
+            transition: all .4s;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        a:hover{
+            opacity: 1;
+        }
+
+        &-activo{
+            opacity: 1 !important;
+        }
+
+        input{
+            cursor: pointer;
+            transition: all .4s;
+            border-radius: 20px;
+            border: 2px solid #4D4C4C;
+            padding: 10px 10px;
+            margin-left: 50px;
+        }
+    
+        input::placeholder{
+            text-align: center;
+        }
+
+        input:hover{
+            background: rgb(240, 240, 240);
+        }
+    }
+}
+
+@media screen and (max-width:992px){
+    .barra{
+        &__icono{
+            display: block;
+        }
+
+        &__navegador{
+            display: none;
+        }
+    }
+}

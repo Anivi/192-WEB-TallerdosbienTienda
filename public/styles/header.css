@@ -1,0 +1,119 @@
+.barra {
+  width: 100%;
+  height: 80px;
+  background: white;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 2px solid #4D4C4C;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.barra__logo img {
+  width: 60%;
+  min-width: 110px;
+}
+
+.barra__icono {
+  width: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.barra__navegador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.barra__navegador a {
+  color: black;
+  text-decoration: none;
+  opacity: .5;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.barra__navegador a:hover {
+  opacity: 1;
+}
+
+.barra__navegador-activo {
+  opacity: 1 !important;
+}
+
+.barra__navegador input {
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  border-radius: 20px;
+  border: 2px solid #4D4C4C;
+  padding: 10px 10px;
+  margin-left: 50px;
+}
+
+.barra__navegador input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.barra__navegador input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.barra__navegador input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.barra__navegador input::placeholder {
+  text-align: center;
+}
+
+.barra__navegador input:hover {
+  background: #f0f0f0;
+}
+
+@media screen and (max-width: 992px) {
+  .barra__icono {
+    display: block;
+  }
+  .barra__navegador {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

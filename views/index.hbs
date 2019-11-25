@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tejidos Patuka</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header class="barra">
+
+        <div class="barra__logo">
+            <img class="logo" src="imagenes/logo.png">
+        </div>
+
+        <div class="barra__icono">
+            <img alt="Icono" src="imagenes/iconos/bars.svg">
+        </div>
+
+        <div class="barra__navegador">
+            <a href="/" class="barra__navegador-activo">Home</a>
+            <a href="#">¿Quienes somos?</a>
+            <a href="/tienda">Tienda</a>
+            <a href="#">¡Aprende!</a>
+            <input type="text" placeholder="¿Que estas buscando?">
+        </div>
+
+    </header>
+
+    <section class="landing">
+
+        <div class="landing__portada">
+            <div class="landing__portada__foto">
+                <img class="landing__portada__foto-thor" src="imagenes/thor.png">
+            </div>
+            <div class="landing__portada__info">
+                <img class="landing__portada__info-titulo" src="imagenes/thortitu.png" alt="">
+                <p> <strong>¿Te encantan los vengadores? </strong></p>
+                <p>Pues ¡llegó Thor! Es momento de que <br> consigas el tuyo y a sus compañeros <br> que podrás
+                    ver en la galeria. <br> ¡Coleccionalos!</p>
+                <button class="landing__portada__info-boton">Comprar</button>
+            </div>
+        </div>
+        
+        <div class="landing__datos">
+            <div class="landing__datos__uno">
+                <img src="/imagenes/corazon.png" alt="Corazon">
+                <p class="landing__datos__uno-text">Productos 100% <br> tejidos a mano</p>
+
+            </div>
+            <div class="landing__datos__uno">
+                <img src="/imagenes/unico.png" alt="Unico">
+                <p class="landing__datos__uno-text">Productos <br> personalizados</p>
+            </div>
+        </div>
+
+        <div class="landing__aleja"  style="background-image: url('./imagenes/nena.jpg')">
+            <div class="landing__aleja__texto">
+                <h1 class="landing__aleja__texto-titulo">Para toda ocasión</h1>
+                <p class="landing__aleja__texto-contenido">Llevanos contigo, a la playa,<br /> a tierra fría o caliente, con el estilo<br /> que quieras.</p>
+                <button class="landing__aleja__texto-boton">Ver prendas</button>
+            </div>
+        </div>
+
+        <div class="landing__carac">
+            <div onmouseout="showText()" class="landing__carac__caracteristica"
+                style="background-image: url('./imagenes/primero.png')">
+                <div class="landing__carac__caracteristica-info">
+                    <h1 class="landing__carac__caracteristica-info-tex">Materiales suaves</h1>
+                    <p class="landing__carac__caracteristica-info-p">Los cuales se adaptan a cualquier clima
+                    </p>
+                </div>
+            </div>
+
+            <div onmouseout="showText()" class="landing__carac__caracteristica"
+                style="background-image: url('./imagenes/segundo.png')">
+
+                <div class="landing__carac__caracteristica-info">
+                    <h1 class="landing__carac__caracteristica-info-tex">Tejido 100% a mano</h1>
+                    <p class="landing__carac__caracteristica-info-p">Lo que hace que cada producto sea único </p>
+                </div>
+            </div>
+
+            <div onmouseout="showText()" class="landing__carac__caracteristica"
+                style="background-image: url('./imagenes/tercero.png')">
+
+                <div class="landing__carac__caracteristica-info">
+                    <h1 class="landing__carac__caracteristica-info-tex">Tejidos dinámicos</h1>
+                    <p class="landing__carac__caracteristica-info-p">Puntadas únicas </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="landing__galeria">
+            <div class="landing__galeria-fotos">
+
+
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/una.png')"></div>
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/dos.png')"></div>
+
+
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/tres.png')"></div>
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/cuatro.png')"></div>
+
+
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/cinco.png')"></div>
+                <div class="landing__galeria-foto" style="background-image: url('imagenes/seis.png')"></div>
+
+
+
+            </div>
+            <div class="landing__galeria-mostrar">
+
+            </div>
+
+        </div>
+        
+        <div class="landing__interaccion">
+
+            <div class="landing__interaccion-fondo">
+
+
+                <h1 class="landing__interaccion-titulo">Pinta el vestido</h1>
+                <!--aquí estoy cargando las lanas y le puse dos clases, para que la segunda se use en js-->
+                <!--la primera clase es para estilos y la segunda para identificar cada elemento en js-->
+                <img class="landing__interaccion-lana rosada" src="imagenes/lana1.png" alt="">
+                <img class="landing__interaccion-lana roja" src="imagenes/lana2.png" alt="">
+                <img class="landing__interaccion-lana amarilla" src="imagenes/lana3.png" alt="">
+                <img class="landing__interaccion-lana azul" src="imagenes/lana4.png" alt="">
+            </div>
+
+            <div class="landing__interaccionmujer">
+                <!--aqui es para la imagen de la mujer que va a cambiar-->
+                <img class="landing__interaccion-mujer" src="imagenes/mujer.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="interaccion__pintada">
+
+        </div>
+        </div>
+
+
+
+        <div class="landing__especificaciones">
+            <div class="landing__especificacionesImg">
+                <img class="especificaciones__perrito" src="imagenes/perrito.png" alt="">
+            </div>
+            <div class="especificaciones__texto">
+                <h1 class="especificaciones__texto-titulo">Especificaciones</h1>
+
+                <ul class="especificaciones__texto-contenido">
+                    <li>Diseños personalizados, con los estilos que desees.</li>
+                    <li>Patrones de tejido que tu quieras</li>
+                    <li>Productos para cualquier tipo de persona</li>
+                    <li>Los tamaños son a tu preferencia</li>
+                    <li>Colores e hilos son a tu preferencia</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="landing__inscripcion">
+
+            <div class="inscripcion__fondo">
+                <div class="inscripcion__texto">
+                    <h1 class="inscripcion__titulo">¡Mira los <br> nuevos productos <br> antes que los demás!
+                    </h1>
+                    <p class="inscripcion__contenido">Recibe actualizaciones sobre nuevos <br> productos y
+                        descuentos</p>
+                    <input class="inscripcion__correo" type="text" placeholder="Ingresa tu correo electrónico">
+                    <button class="inscripcion__correo-boton">Registrarse</button>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <footer class="footer">
+        
+        <div class="footer__logo">
+            <img class="logo" src="imagenes/logo.png">
+        </div>
+
+        <div class="footer__text">
+            <p>Información de la empresa</p>
+            <p>¡Quiero aprender!</p>
+            <p>Contáctanos</p>
+            <p>Ubicación</p>
+        </div>
+    </footer>
+
+
+    <script src="script/menu.js"></script>
+</body>
+
+</html>
