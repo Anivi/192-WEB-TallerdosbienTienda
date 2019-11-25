@@ -1,8 +1,25 @@
 const express = require('express'),
     engines = require('consolidate');
 
+//Mongo: crear variables (Paso 1)
+var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
+const url = 'mongodb://localhost:27017';
+const dbName = 'patuka';
+const client = new MongoClient(url, { useNewUrlParser: true });
+var clientdb=null;
+
+//Mongo: conectar (Paso 2)
+client.connect(function(err) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+    clientdb = client.db(dbName);
+   // client.close();
+  });
+
 var app = express();
 
+/*
 //instalar Mongo
 var MongoClient =require('mongodb').MongoClient;
 var assert = require('assert');
@@ -10,6 +27,7 @@ var assert = require('assert');
 //Conection URL
 const url= 'mongodb://localhost:27017';
 const dbName = 'tienda';
+
 
 //Create Clietn Object
 const client = new MongoClient(url, { useNewUrlParser: true});
@@ -28,6 +46,7 @@ function(err,client){
 }
 );
 
+*/
 
 app.engine('hbs', engines.handlebars);
 
@@ -45,7 +64,7 @@ app.get( '/', ( req, res ) => {
 
 //Tienda
 app.get('/tienda', (req,res) => {
-    var productos= db.collection('productos');
+    var productos= clientdb.collection('productos');
     productos.find().toArray(function(err,docs){
         assert.equal(null,err);
         var contexto ={

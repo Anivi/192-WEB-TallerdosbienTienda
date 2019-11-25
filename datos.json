@@ -1,7 +1,7 @@
 [
     {
         "name": "Frankestein",
-        "imagenes": [ "Frankes 1.png", "Frankes 2.png", "Frankes 3.png"],
+        "imagenes": [ "/imagenes/Frankes1.png", "/imagenes/Frankes2.png", "/imagenes/Frankes3.png"],
         "color": "Verde",
         "tamaño": "Mediano",
         "precio": "15.000",
@@ -12,7 +12,7 @@
 
     {
         "name": "Vaquita",
-        "imagenes": ["Vaca 1.png", "Vaca 2.png", "Vaca 3.png"],
+        "imagenes": ["/imagenes/Vaca1.png", "/imagenes/Vaca2.png", "/imagenes/Vaca3.png"],
         "color": "Blanco",
         "tamaño": "Pequeño",
         "precio": "25.000",
@@ -22,7 +22,7 @@
 
     {
         "name": "Totoro",
-        "imagenes":["Totoro 1.png", "Totoro 2.png", "Totoro 3.png"],
+        "imagenes":["/imagenes/Totoro1.png", "/imagenes/Totoro2.png", "/imagenes/Totoro3.png"],
         "color":"Colorido",
         "tamaño": "Mediano",
         "precio": "25.000",
@@ -33,7 +33,7 @@
 
     {
         "name": "Oso Amarillo",
-        "imagenes":["OsoA 1.png", "OsoA 2.png", "OsoA 3.png"],
+        "imagenes":["/imagenes/OsoA1.png", "/imagenes/OsoA2.png", "/imagenes/OsoA3.png"],
         "color":"Amarillo",
         "tamaño": "Mediano",
         "precio": "20.000" ,
@@ -44,7 +44,7 @@
 
     {
         "name": "Conejita",
-        "imagenes":["Coneja 1.png", "Coneja 2.png", "Coneja 3.png"],
+        "imagenes":["/imagenes/Coneja1.png", "/imagenes/Coneja2.png", "/imagenes/Coneja3.png"],
         "color":"Colorido",
         "tamaño": "Grande",
         "precio": "30.000",
@@ -54,7 +54,7 @@
 
     {
         "name": "Familia de Totoro",
-        "imagenes":["Familia 1.png", "Familia 2.png", "Familia 3.png"],
+        "imagenes":["/imagenes/Familia1.png", "/imagenes/Familia2.png", "/imagenes/Familia3.png"],
         "color": "Colorido",
         "tamaño": "Grande",
         "precio": "50.000",
@@ -65,7 +65,7 @@
 
     {
         "name": "Monito",
-        "imagenes": ["Mono 1.png", "Mono 2.png", "Mono 3.png"],
+        "imagenes": ["/imagenes/Mono1.png", "/imagenes/Mono2.png", "/imagenes/Mono3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"20.000",
@@ -75,7 +75,7 @@
 
     {
         "name": "Dracula",
-        "imagenes":["Dracula 1.png", "Dracula 2.png", "Dracula 3.png"],
+        "imagenes":["/imagenes/Dracula1.png", "/imagenes/Dracula2.png", "/imagenes/Dracula3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"15.000",
@@ -85,7 +85,7 @@
 
     {
         "name": "Cerdito",
-        "imagenes":["Cerdo 1.png", "Cerdo 2.png", "Cerdo 3.png"],
+        "imagenes":["/imagenes/Cerdo1.png", "/imagenes/Cerdo2.png", "/imagenes/Cerdo3.png"],
         "color":"Rosado",
         "tamaño": "Mediano",
         "precio":"20.000",
@@ -95,7 +95,7 @@
 
     {
         "name": "Saitama",
-        "imagenes":["Saitama 1.png", "Saitama 2.png", "Saitama 3.png"],
+        "imagenes":["/imagenes/Saitama1.png", "/imagenes/Saitama2.png", "/imagenes/Saitama3.png"],
         "color":"Colorido",
         "tamaño":"Mediano",
         "precio":"25.000",
@@ -106,7 +106,7 @@
 
     {
         "name": "Gorrito de Gato",
-        "imagenes":["Gorro Gato.png"],
+        "imagenes":["/imagenes/GorroGato.png"],
         "color":"Amarillo",
         "tamaño":"Grande",
         "precio": "30.000",
@@ -116,7 +116,7 @@
 
     {
         "name": "Perrito",
-        "imagenes":["Perrito 1.png", "Perrito 2.png", "Perrito 3.png"],
+        "imagenes":["/imagenes/Perrito1.png", "/imagenes/Perrito2.png", "/imagenes/Perrito3.png"],
         "color":"Blanco",
         "tamaño":"Pequeño",
         "precio":"15.000",
@@ -126,7 +126,7 @@
 
     {
         "name": "Monstruo",
-        "imagenes":["Monstruo 1.png", "Monstruo 2.png", "Monstruo 3.png"],
+        "imagenes":["/imagenes/Monstruo1.png", "/imagenes/Monstruo2.png", "/imagenes/Monstruo3.png"],
         "color":"Azul",
         "tamaño":"Pequeño",
         "precio":"15.000",
@@ -136,7 +136,7 @@
 
     {
         "name": "Gorrito de buho",
-        "imagenes":["Gorro Buho.png"],
+        "imagenes":["/imagenes/GorroBuho.png"],
         "color":"Rosado",
         "tamaño":"Grande",
         "precio": "25.000",
@@ -146,7 +146,7 @@
 
     {
         "name": "Capitan América",
-        "imagenes":["Capi 1.png", "Capi 2.png", "Capi 3.png"],
+        "imagenes":["/imagenes/Capi1.png", "/imagenes/Capi2.png", "/imagenes/Capi3.png"],
         "color":"Colorido",
         "tamaño": "Mediano",
         "precio": "30.000",
@@ -157,7 +157,7 @@
 
     {
         "name": "Oso Verde",
-        "imagenes":["OsoV 1.png", "OsoV 2.png", "OsoV 3.png"],
+        "imagenes":["/imagenes/OsoV1.png", "/imagenes/OsoV2.png", "/imagenes/OsoV3.png"],
         "color":"Verde",
         "tamaño":"Mediano",
         "precio": "20.000",
@@ -167,7 +167,7 @@
 
     {
         "name": "Mini Totoro",
-        "imagenes":["Minito 1.png", "Minito 2.png", "Minito 3.png"],
+        "imagenes":["/imagenes/Minito1.png", "/imagenes/Minito2.png", "/imagenes/Minito3.png"],
         "color":"Colorido",
         "tamaño": "Pequeño",
         "precio": "15.000",
@@ -177,7 +177,7 @@
 
     {
         "name": "Gorro Multicolor",
-        "imagenes":["Gorro multicolor.png"],
+        "imagenes":["/imagenes/Gorromulticolor.png"],
         "color":"Colorido",
         "tamaño":"Grande",
         "precio": "30.000",
@@ -187,7 +187,7 @@
 
     {
         "name": "Caracol",
-        "imagenes":["Caracol 1.png", "Caracol 2.png", "Caracol 3.png"],
+        "imagenes":["/imagenes/Caracol1.png", "/imagenes/Caracol2.png", "/imagenes/Caracol3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"15.000",
@@ -197,7 +197,7 @@
 
     {
         "name": "Oso Naranja",
-        "imagenes":["OsoN 1.png", "OsoN 2.png", "OsoN 3.png"],
+        "imagenes":["/imagenes/OsoN1.png", "/imagenes/OsoN2.png", "/imagenes/OsoN3.png"],
         "color":"Naranja",
         "tamaño":"Mediano",
         "precio": "20.000",

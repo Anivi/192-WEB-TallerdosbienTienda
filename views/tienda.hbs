@@ -99,13 +99,17 @@
             </section>
 
             <article class="tienda__content__items">
-
+                {{#each productos}}
                 <div class="tienda__content__items__item">
-                    <div class="tienda__content__items__item__img">
-                        <a href="/producto"><img src="imagenes/Frankes 1.png"  alt="Producto"  ></a>
+                    <li>
+                        <div class="tienda__content__items__item__img">
+                        <a href="/producto"><img src="{{imagenes.[0]}}"  alt="Producto"  ></a>
                     </div>
-                    <p>Frankenstein</p>
+                    <p>{{name}}</p>
+                    </li>
+                    
                 </div>
+                {{/each}}
 
                 
             </article>
