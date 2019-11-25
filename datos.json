@@ -6,7 +6,8 @@
         "tamaño": "Mediano",
         "precio": "15.000",
         "Tendencia": "Sí",
-        "Producto":"Amigurumi"
+        "Producto":"Amigurumi",
+        "Textura": "Suave"
 
     },
 
@@ -16,7 +17,9 @@
         "color": "Blanco",
         "tamaño": "Pequeño",
         "precio": "25.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Suave"
+
 
     },
 
@@ -27,7 +30,9 @@
         "tamaño": "Mediano",
         "precio": "25.000",
         "Tendencia": "Sí",
-        "Producto":"Fantasia"
+        "Producto":"Fantasia",
+        "Textura": "Suave"
+
 
     },
 
@@ -37,7 +42,9 @@
         "color":"Amarillo",
         "tamaño": "Mediano",
         "precio": "20.000" ,
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Duro"
+
 
 
     },
@@ -58,7 +65,9 @@
         "color": "Colorido",
         "tamaño": "Grande",
         "precio": "50.000",
-        "Producto":"Fantasia"
+        "Producto":"Fantasia",
+        "Textura": "Duro"
+
         
 
     },
@@ -69,7 +78,9 @@
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"20.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Duro"
+
 
     },
 
@@ -79,7 +90,9 @@
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"15.000",
-        "Producto":"Fantasia"
+        "Producto":"Fantasia",
+        "Textura": "Suave"
+
 
     },
 
@@ -89,7 +102,9 @@
         "color":"Rosado",
         "tamaño": "Mediano",
         "precio":"20.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Suave"
+
 
     },
 
@@ -100,7 +115,9 @@
         "tamaño":"Mediano",
         "precio":"25.000",
         "Tendencia": "Sí",
-        "Producto":"Fantasia"
+        "Producto":"Fantasia",
+        "Textura": "Duro"
+
 
     },
 
@@ -110,7 +127,8 @@
         "color":"Amarillo",
         "tamaño":"Grande",
         "precio": "30.000",
-        "Producto":"Prenda"
+        "Producto":"Prenda",
+        "Textura": "Suave"
 
     },
 
@@ -120,7 +138,8 @@
         "color":"Blanco",
         "tamaño":"Pequeño",
         "precio":"15.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Suave"
 
     },
 
@@ -130,7 +149,8 @@
         "color":"Azul",
         "tamaño":"Pequeño",
         "precio":"15.000",
-        "Producto":"Fantasia"
+        "Producto":"Fantasia",
+        "Textura": "Duro"
 
     },
 
@@ -140,7 +160,8 @@
         "color":"Rosado",
         "tamaño":"Grande",
         "precio": "25.000",
-        "Producto":"Prenda"
+        "Producto":"Prenda",
+        "Textura": "Suave"
 
     },
 
@@ -151,7 +172,8 @@
         "tamaño": "Mediano",
         "precio": "30.000",
         "Tendencia": "Sí",
-        "Producto":"Amigurumu"
+        "Producto":"Amigurumu",
+        "Textura": "Suave"
 
     },
 
@@ -161,7 +183,8 @@
         "color":"Verde",
         "tamaño":"Mediano",
         "precio": "20.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Duro"
 
     },
 
@@ -171,7 +194,8 @@
         "color":"Colorido",
         "tamaño": "Pequeño",
         "precio": "15.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Duro"
 
     },
 
@@ -181,7 +205,8 @@
         "color":"Colorido",
         "tamaño":"Grande",
         "precio": "30.000",
-        "Producto":"Prenda"
+        "Producto":"Prenda",
+        "Textura": "Suave"
 
     },
 
@@ -191,7 +216,8 @@
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"15.000",
-        "Producto":"Amigurumi"
+        "Producto":"Amigurumi",
+        "Textura": "Duro"
 
     },
 
@@ -201,7 +227,8 @@
         "color":"Naranja",
         "tamaño":"Mediano",
         "precio": "20.000",
-        "Producto":"Animal"
+        "Producto":"Animal",
+        "Textura": "Duro"
 
     }
 
