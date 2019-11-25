@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-
+    <link rel="stylesheet" href="styles/carrito.css">
 </head>
 
 <body>
@@ -33,24 +33,41 @@
         </div>
     </header>
 
-        <div class="prueba">
+        <h1>Tus productos:</h1>
+
+        <div class="lista">
             {{#each productos}}
-            <div class="cuerpo__izq__item">
-                <img src="./image/galeriaAretes/{{imagenes.[0]}}.jpg" alt="" class="cuerpo__izq__item__img" width="15%"
+            <div class="prod">
+                <img src="{{imagenes.[0]}}" alt="" class="prod__img" width="15%"
                     height="35%">
 
-                <div class="cuerpo__izq__item__img__name">
-                    <h2>{{nombre}}</h2>
-                    <h6>{{descripción}}</h6>
+                <div class="prod__elems">
+                    <h2>{{name}}</h2>
+                    <h6>Tamaño: {{tamaño}}</h6>
+                    <h6>Textura: {{Textura}}</h6>
                 </div>
-
-                <div data-color="{{color}}" class="color">{{color}}</div>
-                <div data-precio="{{categoria}}" class="categoria">{{categoria}}</div>
-                <h3 data-precio="{{Precio}}" class="precio">${{precio}}</h3>
-                <div class="cerrar">x</div>
+                <h6>Precio: ${{precio}}</h6>
             </div>
             {{/each}}
+
         </div>
+        
+        <h6 class="Tot">Total: ${{total}}</h6>
+
+        <div class="datos">
+            <div class="izq">
+                <input type="text" placeholder="Direccion">
+                <input type="text" placeholder="Telefono">
+                <input type="text" placeholder="Ciudad">
+                <h6 class="Tot">Precio: ${{total}}</h6>
+            </div>
+
+            <div class="der">
+                <p>Metodo de Pago</p>
+            </div>
+
+        </div>
+            <button class="comprar">Comprar</button>
 </body>
 
 </html>
