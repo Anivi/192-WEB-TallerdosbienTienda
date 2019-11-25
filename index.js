@@ -48,7 +48,7 @@ app.get('/tienda', function (request, response) {
     };
 
     coleccion.find(obj).toArray(function (err, docs) {
-        if (err) {
+        if (err) { 
             console.log(err);
             response.send(err);
             return;
