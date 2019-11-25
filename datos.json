@@ -1,182 +1,208 @@
 [
     {
-        "id": 1,
+        "name": "Frankestein",
         "imagenes": [ "Frankes 1.png", "Frankes 2.png", "Frankes 3.png"],
         "color": "Verde",
         "tamaño": "Mediano",
-        "precio": "15.000"
+        "precio": "15.000",
+        "Tendencia": "Sí",
+        "Producto":"Amigurumi"
 
     },
 
     {
-        "id": 2,
+        "name": "Vaquita",
         "imagenes": ["Vaca 1.png", "Vaca 2.png", "Vaca 3.png"],
         "color": "Blanco",
         "tamaño": "Pequeño",
-        "precio": 25.000
+        "precio": "25.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 3,
-        "imagenes":["Totoro 1.png", "Totoro 2.png", "Totoro 3.png"],,
+        "name": "Totoro",
+        "imagenes":["Totoro 1.png", "Totoro 2.png", "Totoro 3.png"],
         "color":"Colorido",
         "tamaño": "Mediano",
-        "precio": 25.000
+        "precio": "25.000",
+        "Tendencia": "Sí",
+        "Producto":"Fantasia"
 
     },
 
     {
-        "id": 4,
+        "name": "Oso Amarillo",
         "imagenes":["OsoA 1.png", "OsoA 2.png", "OsoA 3.png"],
         "color":"Amarillo",
         "tamaño": "Mediano",
-        "precio":20.000
+        "precio": "20.000" ,
+        "Producto":"Animal"
+
 
     },
 
     {
-        "id": 5,
+        "name": "Conejita",
         "imagenes":["Coneja 1.png", "Coneja 2.png", "Coneja 3.png"],
         "color":"Colorido",
         "tamaño": "Grande",
-        "precio": 30.000
+        "precio": "30.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 6,
+        "name": "Familia de Totoro",
         "imagenes":["Familia 1.png", "Familia 2.png", "Familia 3.png"],
         "color": "Colorido",
         "tamaño": "Grande",
-        "precio": "50.000"
+        "precio": "50.000",
+        "Producto":"Fantasia"
+        
 
     },
 
     {
-        "id": 7,
+        "name": "Monito",
         "imagenes": ["Mono 1.png", "Mono 2.png", "Mono 3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
-        "precio":"20.000"
+        "precio":"20.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 8,
+        "name": "Dracula",
         "imagenes":["Dracula 1.png", "Dracula 2.png", "Dracula 3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
         "precio":"15.000",
+        "Producto":"Fantasia"
 
     },
 
     {
-        "id": 9,
+        "name": "Cerdito",
         "imagenes":["Cerdo 1.png", "Cerdo 2.png", "Cerdo 3.png"],
         "color":"Rosado",
         "tamaño": "Mediano",
-        "precio":"20.000"
+        "precio":"20.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 10,
+        "name": "Saitama",
         "imagenes":["Saitama 1.png", "Saitama 2.png", "Saitama 3.png"],
         "color":"Colorido",
         "tamaño":"Mediano",
-        "precio":"25.000"
+        "precio":"25.000",
+        "Tendencia": "Sí",
+        "Producto":"Fantasia"
 
     },
 
     {
-        "id": 11,
+        "name": "Gorrito de Gato",
         "imagenes":["Gorro Gato.png"],
         "color":"Amarillo",
         "tamaño":"Grande",
-        "precio": 30.000
+        "precio": "30.000",
+        "Producto":"Prenda"
 
     },
 
     {
-        "id": 12,
+        "name": "Perrito",
         "imagenes":["Perrito 1.png", "Perrito 2.png", "Perrito 3.png"],
         "color":"Blanco",
         "tamaño":"Pequeño",
-        "precio":"15.000"
+        "precio":"15.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 13,
+        "name": "Monstruo",
         "imagenes":["Monstruo 1.png", "Monstruo 2.png", "Monstruo 3.png"],
         "color":"Azul",
         "tamaño":"Pequeño",
-        "precio":"15.000"
+        "precio":"15.000",
+        "Producto":"Fantasia"
 
     },
 
     {
-        "id": 14,
+        "name": "Gorrito de buho",
         "imagenes":["Gorro Buho.png"],
         "color":"Rosado",
         "tamaño":"Grande",
-        "precio": "25.000"
+        "precio": "25.000",
+        "Producto":"Prenda"
 
     },
 
     {
-        "id": 15,
+        "name": "Capitan América",
         "imagenes":["Capi 1.png", "Capi 2.png", "Capi 3.png"],
         "color":"Colorido",
         "tamaño": "Mediano",
-        "precio": "30.000"
+        "precio": "30.000",
+        "Tendencia": "Sí",
+        "Producto":"Amigurumu"
 
     },
 
     {
-        "id": 16,
+        "name": "Oso Verde",
         "imagenes":["OsoV 1.png", "OsoV 2.png", "OsoV 3.png"],
         "color":"Verde",
         "tamaño":"Mediano",
-        "precio": "20.000"
+        "precio": "20.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 17,
+        "name": "Mini Totoro",
         "imagenes":["Minito 1.png", "Minito 2.png", "Minito 3.png"],
         "color":"Colorido",
         "tamaño": "Pequeño",
-        "precio": "15.000"
+        "precio": "15.000",
+        "Producto":"Animal"
 
     },
 
     {
-        "id": 18,
+        "name": "Gorro Multicolor",
         "imagenes":["Gorro multicolor.png"],
         "color":"Colorido",
         "tamaño":"Grande",
-        "precio": "30.000"
+        "precio": "30.000",
+        "Producto":"Prenda"
 
     },
 
     {
-        "id": 19,
+        "name": "Caracol",
         "imagenes":["Caracol 1.png", "Caracol 2.png", "Caracol 3.png"],
         "color":"Colorido",
         "tamaño":"Pequeño",
-        "precio":"15.000"
+        "precio":"15.000",
+        "Producto":"Amigurumi"
 
     },
 
     {
-        "id": 20,
+        "name": "Oso Naranja",
         "imagenes":["OsoN 1.png", "OsoN 2.png", "OsoN 3.png"],
-        "color":"Naranaj",
+        "color":"Naranja",
         "tamaño":"Mediano",
-        "precio": "20.000"
+        "precio": "20.000",
+        "Producto":"Animal"
 
-    },
+    }
 
 ]

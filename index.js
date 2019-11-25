@@ -3,6 +3,31 @@ const express = require('express'),
 
 var app = express();
 
+//instalar Mongo
+var MongoClient =require('mongodb').MongoClient;
+var assert = require('assert');
+
+//Conection URL
+const url= 'mongodb://localhost:27017';
+const dbName = 'tienda';
+
+//Create Clietn Object
+const client = new MongoClient(url, { useNewUrlParser: true});
+var db = null;
+
+MongoClient.connect(`mongodb+srv://cluster0-rfkyi.mongodb.net/tienda`, {
+    auth:{
+        user:'aj-taller',
+        password:'ContraseñaSuperSegura123'
+    }
+},
+function(err,client){
+    if(err) throw err;
+    db = client.db('tienda');
+    app.listen(process.env.PORT ||500);
+}
+);
+
 
 app.engine('hbs', engines.handlebars);
 
@@ -20,7 +45,14 @@ app.get( '/', ( req, res ) => {
 
 //Tienda
 app.get('/tienda', (req,res) => {
-    res.render('tienda');
+    var productos= db.collection('productos');
+    productos.find().toArray(function(err,docs){
+        assert.equal(null,err);
+        var contexto ={
+            productos:docs
+        }
+        res.render('tienda',contexto);
+    })
 });
 
 //Carrito

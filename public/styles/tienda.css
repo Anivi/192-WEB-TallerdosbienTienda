@@ -173,8 +173,9 @@
 }
 
 .tienda__filter__content__item__content p {
-  margin: 10px 0;
+  margin: 10px 20px;
   margin-left: 70px;
+  margin-right: 80px;
   opacity: .5;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -244,6 +245,7 @@
   -webkit-transition: all .4s;
   transition: all .4s;
   cursor: pointer;
+  padding: 10px;
 }
 
 .tienda__content__items__item__img img {
