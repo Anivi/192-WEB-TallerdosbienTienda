@@ -1,9 +1,13 @@
 .producto {
-    padding-top: 80px;
+    padding-top: -50px;
 
     &__caption {
+        margin-top: -30px;
+        margin-left: 5%;
         &__nombre {
-            font-size: 200px;
+            font-size: 80px;
+            font-family: Muli;
+            color: gray;
         
         }
 
@@ -56,6 +60,8 @@
             justify-content: space-around;
             align-content: stretch;
             align-items: center;
+            margin-top: 100px;
+
 
             width: 120px;
             padding: 10px;
@@ -65,7 +71,7 @@
 
             cursor: pointer;
 
-            img {
+            &__imagen {
                 width: 20px;
                 opacity: .5;
             }
