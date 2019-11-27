@@ -4,8 +4,9 @@
     &__caption {
         margin-top: -30px;
         margin-left: 5%;
+        margin-right: 5%;
         &__nombre {
-            font-size: 60px;
+            font-size: 80px;
             font-family: Muli;
             color: gray;
         
@@ -16,33 +17,45 @@
 }
 
 .imagen {
-    
+
+    height: 70px;
+    border-radius: 30px;
+    padding: 8 8 8 8px;
+    font-size: 30px;
+    margin-left: 10px;
+    border: 3px solid rgb(211, 181, 14);;
+    box-shadow: 2px 2px 10px rgb(211, 181, 14);;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 800px;
 }
 
     .imgContesp {
+        
         height: 100%;
-        img {height: 100%;}
+        img {height: 80%;}
     }
 
     .imgsVerticales{
         overflow: hidden;
         height: 100%;
         display: flex;
-       
+        margin-top: 400px;
         
         
         
         &__descripciones{
-            font-size: 20px;
-            margin-left: 150px;
-            padding: 0px;
-           
-            justify-content: space-between;
+            height: 70px;
+            border-radius: 30px;
+            padding: 15px;
+            font-size: 30px;
+            margin-left: 50px;
+            border: 3px solid rgb(211, 181, 14);;
+            box-shadow: 2px 2px 10px rgb(211, 181, 14);;
+
            
 
 
@@ -63,10 +76,13 @@
 
 .precio{
     font-size: 30px;
-    padding: 50px 0px;
+    padding: 20px 0px;
+    margin-top: -150px;
+    margin-left: 100px;
 }
 
 .btnAgregar{
+    margin-left: 100px;
     margin-bottom: 80px;
     background: transparent;
     background-color:rgb(211, 181, 14);
