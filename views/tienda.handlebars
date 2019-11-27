@@ -84,10 +84,10 @@
             
             <section class="filters">
                 <article class="filters__content">
-                    <p><strong>Ordenar por: </strong></p>
-                    <a href="/tienda?var=ordenar&val=precio">Menor a mayor precio</p>
-                    <a href="/tienda?var=ordenar&val=producto">Producto</p>
-                    <a href="/tienda?var=ordenar&val=tendencia">Tendencia</p>
+                    <p class="filters__content__ordenar"><strong>Ordenar por: </strong></p>
+                    <a class="filters__content__precio" href="/tienda?var=ordenar&val=precio">Menor a mayor precio</p>
+                    <a class="filters__content__producto" href="/tienda?var=ordenar&val=producto">Producto</p>
+                    <a class="filters__content__tendencia" href="/tienda?var=ordenar&val=tendencia">Tendencia</p>
                 </article>
 
                 <article class="filters__car">
@@ -104,8 +104,10 @@
                     <li>
                         <div class="tienda__content__items__item__img">
                         <a href='/producto?producto={{name}}'><img src="{{imagenes.[0]}}"  alt="Producto"  ></a>
+                        <a href='/producto?producto={{precio}}'></a>
                     </div>
                     <p>{{name}}</p>
+                    <p>{{precio}}</p>
                     </li>
                     
                 </div>

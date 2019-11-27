@@ -124,6 +124,8 @@
                         text-decoration: none;
                         color: black;
                         cursor: pointer;
+
+                      
                     }
 
                     a:hover {
@@ -133,6 +135,8 @@
             }
         }
     }
+
+
 
     &__content {
         padding: 0 40px;
@@ -185,4 +189,37 @@
             }
         }
     }
+}
+
+a{
+    text-decoration: none;
+}
+
+.filters{
+
+    &__content{
+            &__ordenar{
+                text-decoration: none;
+                color: black;
+                
+            }
+            
+            &__precio{
+                margin: 0 9px;
+                text-decoration: none;
+                color:black;
+            }
+            &__producto{
+                margin: 0 9px;
+                text-decoration: none;
+                color:black;
+
+            }
+            &__tendencia{
+                margin: 0 9px;
+                text-decoration: none;
+                color:black;
+
+            }
+        }
 }

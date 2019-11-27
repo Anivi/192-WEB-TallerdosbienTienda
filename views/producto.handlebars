@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -54,15 +54,16 @@
                     <div class="imgCont">
                         <img id="pe2" src="{{imagenes.[2]}}" alt="{{nombre}}">
                     </div>
-                    <p>Tamaño: {{tamaño}}   Textura: {{Textura}}</p>
+                    <p class="imgsVerticales__descripciones">Tamaño: {{tamaño}}   </p>
+                    <p class="imgsVerticales__descripciones">Textura: {{Textura}}</p>
                 </div>
             </article>
 
-            <!--<h3>Descripción</h3>-->
-           <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio itaque saepe nesciunt eveniet accusamus velit dolores, esse quidem eius ad fugit consequatur perferendis laborum, inventore laboriosam voluptas minima. Quis.</p>-->
-            <p>Precio: ${{precio}}</p>
+            <div class="informacion">
+            <p class="precio">Precio: ${{precio}}</p>
 
             <button class="btnAgregar" data-name="{{name}}">Agregar al carrito</button>
+            </div>
 
         </article>
         {{/each}}

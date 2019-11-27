@@ -268,4 +268,31 @@
   font-weight: bold;
   margin: 10px 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+.filters__content__ordenar {
+  text-decoration: none;
+  color: black;
+}
+
+.filters__content__precio {
+  margin: 0 9px;
+  text-decoration: none;
+  color: black;
+}
+
+.filters__content__producto {
+  margin: 0 9px;
+  text-decoration: none;
+  color: black;
+}
+
+.filters__content__tendencia {
+  margin: 0 9px;
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=tienda.css.map */
