@@ -36,48 +36,7 @@
 
 
 }
-&__borrar{
-    width: 150px;
-    padding: 10px;
-   // margin: 0 auto;
-    margin-left: 110px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background: transparent;
-    background-color:rgb(211, 181, 14);
-    border: 2px solid rgb(211, 181, 14);
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
 
-&__borrar:hover{
-    background-color:white;
-    color: grey;
-
-}
-
-&__producto{
-    width: 150px;
-    padding: 10px;
-   // margin: 0 auto;
-    margin-left: 3px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background: transparent;
-    background-color:rgb(211, 181, 14);
-    border: 2px solid rgb(211, 181, 14);
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-&__producto:hover{
-        background-color:white;
-        color: grey;
-    
-}
 
 }
 .totales{
@@ -88,4 +47,46 @@
     padding: 25px;
 }
 
+.comprar{
+    width: 150px;
+    padding: 10px;
+   // margin: 0 auto;
+    margin-left: 140px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: transparent;
+    background-color:rgb(211, 181, 14);
+    border: 2px solid rgb(211, 181, 14);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.comprar:hover{
+    background-color:white;
+        color: grey;
+    
+}
+
+.btnVaciar{
+    width: 150px;
+    padding: 10px;
+   // margin: 0 auto;
+    margin-left: 500px;
+    margin-top: -95px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: transparent;
+    background-color:rgb(211, 181, 14);
+    border: 2px solid rgb(211, 181, 14);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.btnVaciar:hover{
+    background-color:white;
+        color: grey;
+    
+}
 
