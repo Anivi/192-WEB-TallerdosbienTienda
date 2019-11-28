@@ -1,0 +1,86 @@
+.datos2 {
+  margin-left: 28%;
+  border: 2px solid #d3b50e;
+  border-radius: 9px;
+  padding: 20 20 100px;
+  width: 800px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+  -webkit-box-shadow: 2px 2px 10px #a7a7a7;
+          box-shadow: 2px 2px 10px #a7a7a7;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.datos2__izq {
+  padding: 40px;
+}
+
+.datos2__izq__inp {
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #8a8989;
+  width: 400px;
+  height: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.totales {
+  margin-top: 15px;
+  margin-left: 30px;
+  color: #555555;
+  font-size: 25px;
+  padding: 25px;
+}
+
+.comprar {
+  width: 150px;
+  padding: 10px;
+  margin-left: 140px;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: transparent;
+  background-color: #d3b50e;
+  border: 2px solid #d3b50e;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.comprar:hover {
+  background-color: white;
+  color: grey;
+}
+
+.btnVaciar {
+  width: 150px;
+  padding: 10px;
+  margin-left: 500px;
+  margin-top: -95px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: transparent;
+  background-color: #d3b50e;
+  border: 2px solid #d3b50e;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.btnVaciar:hover {
+  background-color: white;
+  color: grey;
+}
+/*# sourceMappingURL=pago.css.map */

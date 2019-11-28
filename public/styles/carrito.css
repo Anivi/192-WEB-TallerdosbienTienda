@@ -1,0 +1,154 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.Tot {
+  border: #d3b50e 2px solid;
+  border-radius: 9px;
+  margin-top: 50px;
+  margin-left: 1405px;
+  padding: 9px;
+  width: 200px;
+}
+
+.lista {
+  margin-top: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.lista .prod {
+  width: 80%;
+  border: #d3b50e 2px solid;
+  border-radius: 9px;
+  padding: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 10px #a7a7a7;
+          box-shadow: 2px 2px 10px #a7a7a7;
+}
+
+.log {
+  border: #d3b50e 2px solid;
+  border-radius: 9px;
+  padding: 40px 15px;
+  width: 50%;
+  margin: 0 14%;
+  margin-top: 50px;
+  height: 200px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 2px 10px #a7a7a7;
+          box-shadow: 2px 2px 10px #a7a7a7;
+  margin-left: 25%;
+}
+
+.log__primero {
+  font-size: 40px;
+  margin-top: 5px;
+  color: #5e5e5e;
+}
+
+.comprar {
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 240px;
+  height: 25px;
+  border-radius: 20px;
+  outline: none;
+  border: 3px solid #6b6b6b;
+  text-align: center;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+.entrar {
+  width: 150px;
+  padding: 10px;
+  margin-left: 360px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: transparent;
+  background-color: #d3b50e;
+  border: 2px solid #d3b50e;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.entrar:hover {
+  background-color: white;
+  color: grey;
+}
+
+.datos {
+  border-radius: 9px;
+  padding: 20px 9px;
+  width: 70%;
+  margin: 0 14%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.datos .titulo {
+  margin-top: 600px;
+  font-size: 500px;
+}
+
+.datos .izq {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.datos .izq input {
+  margin-bottom: 9px;
+}
+/*# sourceMappingURL=carrito.css.map */
