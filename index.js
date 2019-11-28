@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.json());
 
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://taller3:finalweb@cluster0-r8gv1.mongodb.net/Tienda?retryWrites=true&w=majority';
 const dbName = 'Tienda';
 const client = new MongoClient(url, {
     useUnifiedTopology: true
@@ -40,6 +40,9 @@ app.set('view engine', 'handlebars');
 
 app.get('/', function (request, response) {
     response.render('index');
+});
+app.get('/aprende', function (request, response) {
+    response.render('aprende');
 });
 
 app.get('/tienda', function (request, response) {
@@ -192,4 +195,4 @@ app.post('/api/nuevaSolicitud', function (request, response) {
     response.send("Nueva solicitud creada");
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
