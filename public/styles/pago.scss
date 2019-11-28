@@ -1,0 +1,39 @@
+.datos2{
+   margin-left: 28%;
+   border: 2px solid rgb(211, 181, 14) ;
+   border-radius: 9px;
+   padding: 20 20 100px;
+   width: 800px;
+   margin-bottom: 10px;
+   display: flex;
+   margin-bottom: 70px;
+   box-shadow: 2px 2px 10px  rgb(167, 167, 167);
+
+   
+  
+   //display: flex;
+   &__izq{
+       padding: 40px;
+       justify-content:space-between;
+       
+   &__inp{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(211, 181, 14) ;
+    width: 400px;
+    height: 25px;;
+    font-size: 20px;
+  
+   
+      
+    
+   }
+
+}
+
+}
+.totales{
+    margin-top: 15px;
+    margin-left: 600px;
+    color: rgb(85, 85, 85);
+}
