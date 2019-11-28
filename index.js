@@ -76,6 +76,7 @@ app.get('/tienda', function (request, response) {
         };
         response.render('tienda', contexto);
     });
+    
 });
 
 app.get('/producto', function (request, response) {
