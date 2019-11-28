@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(express.json());
-
+//heroku aqui
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb+srv://taller3:finalweb@cluster0-r8gv1.mongodb.net/Tienda?retryWrites=true&w=majority';
 const dbName = 'Tienda';
