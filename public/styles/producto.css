@@ -89,6 +89,7 @@
   background-color: #d3b50e;
   border: 2px solid #d3b50e;
   cursor: pointer;
+  position: absolute;
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;

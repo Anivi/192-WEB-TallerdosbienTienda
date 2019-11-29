@@ -30,13 +30,30 @@ mtlLoader.setTexturePath('/assets/');
 mtlLoader.setPath('/assets/');
 mtlLoader.load('ANA.mtl', function (materials) {
 
+    
+    var textureLoader = new THREE.TextureLoader();
+var map = textureLoader.load('/assets/img_1971.jpg');
+var material = new THREE.MeshPhongMaterial({map: map});
+
+var texture = new THREE.TextureLoader().load( "/assets/img_1971.jpg" );
+texture.wrapS = THREE.RepeatWrapping;
+texture.wrapT = THREE.RepeatWrapping;
+texture.repeat.set( 4, 4 );
+
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
+  
+    
+    objLoader.set
     objLoader.setPath('/assets/');
     objLoader.load('ANA.obj', function (object) {
+        object.traverse( function ( node ) {
 
+            if ( node.isMesh ) node.material = material;
+        
+          } );
         scene.add(object);
         object.position.y -= 100;
         object.position.x -= 60;
