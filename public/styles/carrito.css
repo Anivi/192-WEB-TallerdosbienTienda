@@ -9,10 +9,13 @@ h1 {
 .Tot {
   border: #d3b50e 2px solid;
   border-radius: 9px;
-  margin-top: 50px;
-  margin-left: 1405px;
+  margin: auto;
   padding: 9px;
   width: 200px;
+}
+
+.landing {
+  margin-bottom: 340px;
 }
 
 .lista {
@@ -90,8 +93,7 @@ h1 {
 
 .comprar {
   width: 400px;
-  margin-top: 20px;
-  margin-left: 240px;
+  margin: auto;
   height: 25px;
   border-radius: 20px;
   outline: none;
@@ -104,8 +106,7 @@ h1 {
 .entrar {
   width: 150px;
   padding: 10px;
-  margin-left: 360px;
-  margin-top: 20px;
+  margin: auto;
   border-radius: 10px;
   background: transparent;
   background-color: #d3b50e;
